@@ -11,15 +11,17 @@
 </head>
 <body>
   <!-- 상단바 -->
-  <div>
+  <div id="top">
     <img src="https://www.instagram.com/static/images/web/mobile_nav_type_logo.png/735145cfe0a4.png">
     <input type="search" value="검색">
   </div>
   <!-- 프로필 -->
-  <div>
-    <img src="./image/profile.JPG" width="50px">
-    <div>
-      <h2>rose</h2>
+  <div id="profile">
+    <div id="profile_pic">
+      <img src="./image/profile.JPG" width="50px" class="circle_pic">
+    </div>
+    <div id="profile_info">
+      <div id="id">rose</div>
       <p>
         <button>프로필 편집</button>
       </p>
@@ -40,39 +42,44 @@
     </p>
   </div>
   <!-- 하이라이트 -->
-  <div>
-    <div>
-      <div>
-        <img src="./image/hl 1.JPG" width="35px">
+  <div id="highlight_area">
+    <div class="highlight">
+      <div class="highlight_pic">
+        <img src="./image/hl 1.JPG" width="35px" class="circle_pic">
       </div>
       <div>
         😊
       </div>
-      <div>
-        <img src="./image/hl 2.JPG" width="35px">
+    </div>
+    <div class="highlight">
+      <div class="highlight_pic">
+        <img src="./image/hl 2.JPG" width="35px" class="circle_pic">
       </div>
       <div>
         😍
       </div>
-      <div>
-        <img src="./image/hl 3.JPG" width="35px">
+    </div>
+    <div class="highlight">
+      <div class="highlight_pic">
+        <img src="./image/hl 3.JPG" width="35px" class="circle_pic">
       </div>
       <div>
         🤩
       </div>
     </div>
+    <div></div>
   </div>
   <!-- 상태표시줄 -->
-  <div>
-    <div>
+  <div class="stat_bar">
+    <div class="stat">
       게시물<br/>
       1001
     </div>
-    <div>
+    <div class="stat">
       팔로워<br/>
       54321
     </div>
-    <div>
+    <div class="stat">
       팔로우<br/>
       12345
     </div>
@@ -83,15 +90,21 @@
   </div>
   <!-- 게시물 썸네일 -->
   <div>
-    <img src="./image/thumbnails/1.JPG" width="32%">
-    <img src="./image/thumbnails/2.JPG" width="32%">
-    <img src="./image/thumbnails/3.JPG" width="32%">
-    <img src="./image/thumbnails/4.JPG" width="32%">
-    <img src="./image/thumbnails/5.JPG" width="32%">
-    <img src="./image/thumbnails/6.JPG" width="32%">
-    <img src="./image/thumbnails/7.JPG" width="32%">
-    <img src="./image/thumbnails/8.JPG" width="32%">
-    <img src="./image/thumbnails/9.JPG" width="32%">
+    <div class="thumbnail_grid">
+      <img src="./image/thumbnails/1.JPG" class="thumbnail">
+      <img src="./image/thumbnails/2.JPG" class="thumbnail">
+      <img src="./image/thumbnails/3.JPG" class="thumbnail">
+    </div>
+    <div class="thumbnail_grid">
+      <img src="./image/thumbnails/4.JPG" class="thumbnail">
+      <img src="./image/thumbnails/5.JPG" class="thumbnail">
+      <img src="./image/thumbnails/6.JPG" class="thumbnail">
+    </div>
+    <div class="thumbnail_grid">
+      <img src="./image/thumbnails/7.JPG" class="thumbnail">
+      <img src="./image/thumbnails/8.JPG" class="thumbnail">
+      <img src="./image/thumbnails/9.JPG" class="thumbnail">
+    </div>
   </div>
 </body>
 </html>
