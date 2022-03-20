@@ -1,130 +1,132 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="stylesheet" href="style.css">
-  <link href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" rel="stylesheet"/>
-  <title>🌼instagram🌼</title>
-</head>
-<body>
-  <!-- 상단바 -->
-  <div id="top">
-    <img src="https://www.instagram.com/static/images/web/mobile_nav_type_logo.png/735145cfe0a4.png">
-    <input type="search" value="🔍검색">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" rel="stylesheet"/>
+    <title>🌼instagram🌼</title>
+
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <!-- 상단바 -->
+    <div id="top">
+      <img src="https://www.instagram.com/static/images/web/mobile_nav_type_logo.png/735145cfe0a4.png">
+      <input type="search" value="🔍검색">
+      <div>
+        <i class="fas fa-home"></i>
+        <i class="far fa-paper-plane"></i>
+        <i class="far fa-compass"></i>
+        <i class="far fa-heart"></i>
+      </div>
+    </div>
+    <!-- 프로필 -->
+    <div id="profile">
+      <div id="profile_pic">
+        <img src="./image/profile.JPG" width="50px" class="circle_pic">
+      </div>
+      <div id="profile_info">
+        <div id="id">rose<i class="fas fa-cog"></i></div>
+        <p>
+          <button>프로필 편집</button>
+        </p>
+      </div>
+    </div>
+    <!-- 소개글 -->
     <div>
-      <i class="fas fa-home"></i>
-      <i class="far fa-paper-plane"></i>
-      <i class="far fa-compass"></i>
-      <i class="far fa-heart"></i>
-    </div>
-  </div>
-  <!-- 프로필 -->
-  <div id="profile">
-    <div id="profile_pic">
-      <img src="./image/profile.JPG" width="50px" class="circle_pic">
-    </div>
-    <div id="profile_info">
-      <div id="id">rose<i class="fas fa-cog"></i></div>
       <p>
-        <button>프로필 편집</button>
+        <strong>
+          로즈(rose)<br/>
+        </strong>
+        개발자
+      </p>
+      <p>
+        <a href="http://rosedaily101.tistory.com">
+          rosedaily101.tistory.com
+        </a>
       </p>
     </div>
-  </div>
-  <!-- 소개글 -->
-  <div>
-    <p>
-      <strong>
-        로즈(rose)<br/>
-      </strong>
-      개발자
-    </p>
-    <p>
-      <a href="http://rosedaily101.tistory.com">
-        rosedaily101.tistory.com
-      </a>
-    </p>
-  </div>
-  <!-- 하이라이트 -->
-  <div id="highlight_area">
-    <div class="highlight">
-      <div class="highlight_pic">
-        <img src="./image/hl 1.JPG" width="35px" class="circle_pic">
+    <!-- 하이라이트 -->
+    <div id="highlight_area">
+      <div class="highlight">
+        <div class="highlight_pic">
+          <img src="./image/hl 1.JPG" width="35px" class="circle_pic">
+        </div>
+        <div>
+          😊
+        </div>
+      </div>
+      <div class="highlight">
+        <div class="highlight_pic">
+          <img src="./image/hl 2.JPG" width="35px" class="circle_pic">
+        </div>
+        <div>
+          😍
+        </div>
+      </div>
+      <div class="highlight">
+        <div class="highlight_pic">
+          <img src="./image/hl 3.JPG" width="35px" class="circle_pic">
+        </div>
+        <div>
+          🤩
+        </div>
+      </div>
+      <div></div>
+    </div>
+    <!-- 상태표시줄 -->
+    <div class="stat_bar">
+      <div class="stat">
+        게시물<br/>
+        1001
+      </div>
+      <div class="stat">
+        팔로워<br/>
+        54321
+      </div>
+      <div class="stat">
+        팔로우<br/>
+        12345
+      </div>
+    </div>
+    <!-- 아이콘 -->
+    <div id="sub_icons">
+      <div class="selected">
+        <i class="fas fa-border-all" id="clickIcon"></i>
       </div>
       <div>
-        😊
-      </div>
-    </div>
-    <div class="highlight">
-      <div class="highlight_pic">
-        <img src="./image/hl 2.JPG" width="35px" class="circle_pic">
+        <i class="fas fa-film"></i>
       </div>
       <div>
-        😍
-      </div>
-    </div>
-    <div class="highlight">
-      <div class="highlight_pic">
-        <img src="./image/hl 3.JPG" width="35px" class="circle_pic">
+        <i class="fas fa-play-circle"></i>
       </div>
       <div>
-        🤩
+        <i class="fas fa-bookmark"></i>
+      </div>
+      <div>
+        <i class="fas fa-user-tag"></i>
       </div>
     </div>
-    <div></div>
-  </div>
-  <!-- 상태표시줄 -->
-  <div class="stat_bar">
-    <div class="stat">
-      게시물<br/>
-      1001
-    </div>
-    <div class="stat">
-      팔로워<br/>
-      54321
-    </div>
-    <div class="stat">
-      팔로우<br/>
-      12345
-    </div>
-  </div>
-  <!-- 아이콘 -->
-  <div id="sub_icons">
-    <div class="selected">
-      <i class="fas fa-border-all"></i>
-    </div>
+    <!-- 게시물 썸네일 -->
     <div>
-      <i class="fas fa-film"></i>
+      <div class="thumbnail_grid">
+        <img src="./image/thumbnails/1.JPG" class="thumbnail">
+        <img src="./image/thumbnails/2.JPG" class="thumbnail">
+        <img src="./image/thumbnails/3.JPG" class="thumbnail">
+      </div>
+      <div class="thumbnail_grid">
+        <img src="./image/thumbnails/4.JPG" class="thumbnail">
+        <img src="./image/thumbnails/5.JPG" class="thumbnail">
+        <img src="./image/thumbnails/6.JPG" class="thumbnail">
+      </div>
+      <div class="thumbnail_grid">
+        <img src="./image/thumbnails/7.JPG" class="thumbnail">
+        <img src="./image/thumbnails/8.JPG" class="thumbnail">
+        <img src="./image/thumbnails/9.JPG" class="thumbnail">
+      </div>
     </div>
-    <div>
-      <i class="fas fa-play-circle"></i>
-    </div>
-    <div>
-      <i class="fas fa-bookmark"></i>
-    </div>
-    <div>
-      <i class="fas fa-user-tag"></i>
-    </div>
-  </div>
-  <!-- 게시물 썸네일 -->
-  <div>
-    <div class="thumbnail_grid">
-      <img src="./image/thumbnails/1.JPG" class="thumbnail">
-      <img src="./image/thumbnails/2.JPG" class="thumbnail">
-      <img src="./image/thumbnails/3.JPG" class="thumbnail">
-    </div>
-    <div class="thumbnail_grid">
-      <img src="./image/thumbnails/4.JPG" class="thumbnail">
-      <img src="./image/thumbnails/5.JPG" class="thumbnail">
-      <img src="./image/thumbnails/6.JPG" class="thumbnail">
-    </div>
-    <div class="thumbnail_grid">
-      <img src="./image/thumbnails/7.JPG" class="thumbnail">
-      <img src="./image/thumbnails/8.JPG" class="thumbnail">
-      <img src="./image/thumbnails/9.JPG" class="thumbnail">
-    </div>
-  </div>
-</body>
+  </body>
 </html>
