@@ -104,3 +104,27 @@ button{
   font-size: 10px;
   font-weight: 100;
 }
+i{
+  color: gray;
+}
+#top i{
+  font-size: 14px;
+}
+#font div{
+  text-align: center;
+  padding-top: 6px;
+}
+
+#sub_icons{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+
+  text-align: center;
+  font-size: 15px;
+
+  height: 30px;
+}
+
+.selected{
+  border-bottom: solid gray 3px;
+}
